@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start">
+            <block name="ga.user.information" after="-" template="Tan_EnhancedEcommerce::user_information.phtml" ifconfig="ec/general/active">
+                <arguments>
+                    <argument name="user_view_model" xsi:type="object">Tan\EnhancedEcommerce\ViewModel\UserBaseInformation</argument>
+                    <argument name="user_coupon_view_model" xsi:type="object">Tan\EnhancedEcommerce\ViewModel\UserCouponInformation</argument>
+                    <argument name="user_reward_view_model" xsi:type="object">Tan\EnhancedEcommerce\ViewModel\UserRewardInformation</argument>
+                    <argument name="user_subscribe_view_model" xsi:type="object">Tan\EnhancedEcommerce\ViewModel\UserSubscribeInformation</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,32 @@
+<?php
+
+use Tan\EnhancedEcommerce\ViewModel\Checkout\Cart\CartProductInformation;
+use Magento\Quote\Model\Quote\Item;
+
+/** @var CartProductInformation $viewModel */
+$viewModel = $block->getCartProductInformationViewModel();
+
+/** @var Item $item */
+foreach ($viewModel->getItems() as $item) {
+    $product = $item->getProduct();
+    /**
+     * FOR FE USE - TANM2D-15702
+     */
+    /*echo ' PRODUCT NAME ' . $product->getName();
+    echo ' PRODUCT ID ' . $product->getId();
+    echo ' PARENT CATEGORY NAME ' . $item->getParentCategoryName();
+    echo ' CATEGORIES NAME ' . $item->getCategoriesName();
+    echo ' BRAND ' . $item->getBrand();
+    echo ' RANGE ' . $item->getRange();
+    echo ' GA PRICE ' . $item->getPrice();
+    echo ' GA QTY ' . $item->getQty();
+    echo ' GA SKU ' . $item->getSku();
+    echo ' GA LINK TO PCM PROMOTION ' . $item->getLinkToPcmPromotion();
+    echo ' GA PACKAGING UNIT ' . $item->getPackagingUnit();
+    echo ' GA PRODUCT TOTAL ' . $item->getRowTotal();
+    echo ' GA PRICE IN POINTS ' . $product->getPointsPrice();
+    echo ' GA BUNDLE ITEM ' . $product->getTypeId();
+    echo ' GA SUBSCRIPTION ITEM ' . $item->getIsSubscription();
+    echo ' GA SPC ITEM ' . $item->getIsSpcItem();*/
+}
+?>

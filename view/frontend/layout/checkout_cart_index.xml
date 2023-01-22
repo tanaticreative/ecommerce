@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="before.body.end">
+            <block name="checkout.cart.ga" class="Magento\Framework\View\Element\Template" template="Tan_EnhancedEcommerce::cart_product_information.phtml" before="-" ifconfig="ec/general/active">
+                <arguments>
+                    <argument name="cart_product_information_view_model" xsi:type="object">
+                        Tan\EnhancedEcommerce\ViewModel\CartProductInformation
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
