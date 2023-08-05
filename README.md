@@ -1,4 +1,4 @@
-TAN Enhanced Ecommerce
+Enhanced Ecommerce
 module has been created to implement custom events and logic based on Anowave Enhanced Ecommerce module and Google Tag Manager features.
 
 Changelog
